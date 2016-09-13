@@ -47,7 +47,7 @@ namespace WindowsFormsApplication2
         public String validarOperador(String operador)
         {
 
-            string aux = "";
+            string aux = "+";
 
             if (operador == "+" || operador == "*" || operador == "-" || operador == "/")
             {

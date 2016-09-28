@@ -28,8 +28,17 @@ namespace WindowsFormsApplication2
                     Resultado = Numero1.getNumero() - Numero2.getNumero();
                     break;
                 case "/":
-                  Resultado = Numero1.getNumero() / Numero2.getNumero();
-                  break;
+   
+                 if(Numero2.getNumero() == 0)
+                    {
+                        Resultado = 0;
+                    }
+                    else
+                    {
+                        Resultado = Numero1.getNumero() / Numero2.getNumero();
+                    }
+                    break;
+       
                 case "*":
                     Resultado = Numero1.getNumero() * Numero2.getNumero();
                     break;

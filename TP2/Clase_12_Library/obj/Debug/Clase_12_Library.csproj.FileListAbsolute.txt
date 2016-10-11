@@ -1,0 +1,4 @@
+C:\Users\Fede\Desktop\Documents\Visual Studio 2010\Projects\TP2\Clase_12_Library\bin\Debug\Clase_12_Library.dll
+C:\Users\Fede\Desktop\Documents\Visual Studio 2010\Projects\TP2\Clase_12_Library\bin\Debug\Clase_12_Library.pdb
+C:\Users\Fede\Desktop\Documents\Visual Studio 2010\Projects\TP2\Clase_12_Library\obj\Debug\Clase_12_Library.dll
+C:\Users\Fede\Desktop\Documents\Visual Studio 2010\Projects\TP2\Clase_12_Library\obj\Debug\Clase_12_Library.pdb

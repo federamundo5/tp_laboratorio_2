@@ -22,7 +22,7 @@ namespace WindowsFormsApplication2
 
         public Numero(String numero)
         {
-            this.numero = int.Parse(numero);
+            this.numero = Double.Parse(numero);
         }
 
         #endregion

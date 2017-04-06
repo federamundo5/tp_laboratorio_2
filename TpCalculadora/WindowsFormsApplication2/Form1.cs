@@ -28,12 +28,29 @@ namespace WindowsFormsApplication2
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-            Numero Numero1 = new Numero(txtNumero1.Text);
-            Numero Numero2 = new Numero(txtNumero2.Text);
-            Calculadora c = new Calculadora();
-            String operador = c.validarOperador(cmbOperacion.Text);
-            double Resultado = c.operar(Numero1, Numero2, operador);
-            lblResultado.Text = "Resultado:" + Resultado;
+          
+            try
+            {
+                Numero Numero1 = new Numero(txtNumero1.Text);
+                Numero Numero2 = new Numero(txtNumero2.Text);
+                Calculadora c = new Calculadora();
+                bool validar = c.validarOperador(cmbOperacion.Text);
+                if (validar == true)
+                {
+                    string Resultado = c.operar(Numero1, Numero2, cmbOperacion.Text);
+                    lblResultado.Text = "Resultado:" + Resultado;
+                }
+                    else
+                    {
+                        lblResultado.Text = "Operador no valido";
+                    }
+                }
+            catch (Exception)
+            {
+
+                lblResultado.Text = "Debe ingresar 2 numeros";
+            }
+          
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

@@ -14,10 +14,10 @@ namespace WindowsFormsApplication2
         /// <param name="Numero2"> Segundo Numero</param>
         /// <param name="operador">Operador</param>
         /// <returns>Retorna un double con el resultado</returns>
-        public double operar(Numero Numero1, Numero Numero2, String operador)
+        public string operar(Numero Numero1, Numero Numero2, String operador)
         {
 
-            Double Resultado = 0;
+            double Resultado = 0;
 
             switch (operador)
             {
@@ -31,7 +31,7 @@ namespace WindowsFormsApplication2
    
                  if(Numero2.getNumero() == 0)
                     {
-                        Resultado = 0;
+                        return "No se puede dividir por 0";
                     }
                     else
                     {
@@ -43,8 +43,8 @@ namespace WindowsFormsApplication2
                     Resultado = Numero1.getNumero() * Numero2.getNumero();
                     break;
             }
-      
-            return Resultado;
+         
+            return Convert.ToString(Resultado);
         }
 
 
@@ -53,21 +53,20 @@ namespace WindowsFormsApplication2
         /// </summary>
         /// <param name="operador"></param>
         /// <returns></returns>
-        public String validarOperador(String operador)
+        public bool validarOperador(String operador)
         {
 
-            string aux = "+";
+   
 
             if (operador == "+" || operador == "*" || operador == "-" || operador == "/")
             {
-                aux = operador;
+                return true;
             }
             else
             {
-                //Error
+                return false;
             }
 
-            return aux;
         }
     }
 }
